@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 
 const WeatherDisplay = ({ token }) => {
@@ -31,7 +31,7 @@ const WeatherDisplay = ({ token }) => {
     };
 
     return (
-        <div className="max-w-md mx-auto p-4 text-white rounded-lg shadow-md">
+        <div className="max-w-md mx-auto p-4 text-white rounded-lg shadow-md bg-dark-card">
             <form onSubmit={handleSubmit} className="mb-4">
                 <input
                     type="text"
@@ -39,11 +39,11 @@ const WeatherDisplay = ({ token }) => {
                     onChange={(e) => setLocation(e.target.value)}
                     placeholder="Enter location"
                     required
-                    className="w-full px-3 py-2 border border-gray-300 rounded mb-2 bg-gray-800 text-white focus:outline-none focus:border-purple-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded mb-2 bg-gray-800 text-white focus:outline-none focus:border-accent"
                 />
                 <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-2 rounded hover:from-purple-600 hover:to-pink-600 transition duration-300"
+                    className="w-full bg-accent text-white py-2 rounded hover:bg-accent-light transition duration-300"
                 >
                     Get Weather
                 </button>

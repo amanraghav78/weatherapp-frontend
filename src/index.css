@@ -4,26 +4,15 @@
 
 /* Custom styles */
 body {
-    background-color: #1a1a1a;
-    color: #f0f0f0;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.bg-black {
-    background-color: #000;
+.bg-dark {
+  background-color: #0d0d0d;
 }
 
-.bg-opacity-60 {
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-input {
-    background-color: #333;
-    border-color: #555;
-    color: #fff;
-}
-
-input:focus {
-    border-color: #6200ea;
-    outline: none;
+.bg-dark-card {
+  background-color: #1a1a1a;
 }
