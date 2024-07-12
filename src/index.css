@@ -1,4 +1,29 @@
-/* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles */
+body {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.bg-opacity-60 {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+input {
+    background-color: #333;
+    border-color: #555;
+    color: #fff;
+}
+
+input:focus {
+    border-color: #6200ea;
+    outline: none;
+}
