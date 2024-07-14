@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 
 const WeatherDisplay = ({ token }) => {
@@ -53,7 +53,7 @@ const WeatherDisplay = ({ token }) => {
             {error && <p className="text-center text-red-500">{error}</p>}
             {weatherData && (
                 <div className="text-center">
-                    <h2 className="text-2xl font-bold mb-2">Weather in {weatherData.name}</h2>
+                    <h2 className="text-2xl font-bold mb-2">Weather in: {weatherData.name}</h2>
                     <img
                         src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
                         alt="Weather icon"

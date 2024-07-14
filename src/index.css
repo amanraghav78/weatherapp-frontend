@@ -16,3 +16,32 @@ body {
 .bg-dark-card {
   background-color: #1a1a1a;
 }
+
+
+
+
+.auth-forms {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 400px;
+  margin: auto;
+}.bg-accent {
+  @apply bg-blue-500;
+}
+
+.bg-accent-light {
+  @apply bg-blue-400;
+}
+
+.text-accent {
+  @apply text-blue-500;
+}
+
+.signup-form, .login-form {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
